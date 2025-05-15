@@ -17,7 +17,7 @@ interface AddToCartButtonProps {
   showIcon?: boolean
 }
 
-export function AddToCartButton({ product, className = "", showIcon = true }: AddToCartButtonProps) {
+export function AddToCartButton({ product, className = "", showIcon = true }: any) {
   const { addItem } = useCart()
   const [isAdded, setIsAdded] = useState(false)
 

@@ -187,7 +187,7 @@ export default function Home() {
                 <Button size="lg" className="bg-white text-teal-700 hover:bg-gray-100">
                   تسوق الآن
                 </Button>
-                <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+                <Button size="lg" variant="outline" className="text-white border-white/50 bg-white/10">
                   تعرف على منتجاتنا
                 </Button>
               </div>
