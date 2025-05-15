@@ -18,7 +18,7 @@ export function PriceDisplay({
   oldPrice,
   unit,
   className = "",
-  priceClassName = "font-bold text-lg text-teal-700",
+  priceClassName = "font-bold text-lg text-red-700",
   oldPriceClassName = "text-sm text-gray-500 line-through",
   unitClassName = "text-xs text-gray-500",
 }: PriceDisplayProps) {

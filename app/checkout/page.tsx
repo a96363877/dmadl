@@ -28,25 +28,25 @@ export default function CheckoutPage() {
       <header className="sticky top-0 z-10 bg-white border-b">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <Fish className="h-6 w-6 text-teal-600" />
-            <span className="text-xl font-bold text-teal-600">بحر الخيرات</span>
+            <Fish className="h-6 w-6 text-red-600" />
+            <span className="text-xl font-bold text-red-600">بحر الخيرات</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             <CountrySelector />
-            <Link href="/" className="text-gray-600 hover:text-teal-600">
+            <Link href="/" className="text-gray-600 hover:text-red-600">
               الرئيسية
             </Link>
-            <Link href="/shipping" className="text-gray-600 hover:text-teal-600">
+            <Link href="/shipping" className="text-gray-600 hover:text-red-600">
               الشحن
             </Link>
-            <Link href="/checkout" className="text-teal-600 hover:text-teal-800">
+            <Link href="/checkout" className="text-red-600 hover:text-red-800">
               الدفع
             </Link>
-            <Link href="/invoice" className="text-gray-600 hover:text-teal-600">
+            <Link href="/invoice" className="text-gray-600 hover:text-red-600">
               الفواتير
             </Link>
           </nav>
-          <Button className="hidden md:flex bg-teal-600 hover:bg-teal-700">تسجيل الدخول</Button>
+          <Button className="hidden md:flex bg-red-600 hover:bg-red-700">تسجيل الدخول</Button>
         </div>
       </header>
 
@@ -55,17 +55,17 @@ export default function CheckoutPage() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center text-sm">
             <div className="flex items-center">
-              <div className="w-8 h-8 rounded-full bg-teal-600 text-white flex items-center justify-center">1</div>
+              <div className="w-8 h-8 rounded-full bg-red-600 text-white flex items-center justify-center">1</div>
               <span className="mr-2">السلة</span>
             </div>
             <ChevronRight className="mx-2 text-gray-400" />
             <div className="flex items-center">
-              <div className="w-8 h-8 rounded-full bg-teal-600 text-white flex items-center justify-center">2</div>
+              <div className="w-8 h-8 rounded-full bg-red-600 text-white flex items-center justify-center">2</div>
               <span className="mr-2">الشحن</span>
             </div>
             <ChevronRight className="mx-2 text-gray-400" />
             <div className="flex items-center">
-              <div className="w-8 h-8 rounded-full bg-teal-600 text-white flex items-center justify-center">3</div>
+              <div className="w-8 h-8 rounded-full bg-red-600 text-white flex items-center justify-center">3</div>
               <span className="mr-2">الدفع</span>
             </div>
             <ChevronRight className="mx-2 text-gray-400" />
@@ -202,7 +202,7 @@ export default function CheckoutPage() {
                 </CardContent>
                 <CardFooter className="flex justify-end">
                   <Link href="/invoice">
-                    <Button className="bg-teal-600 hover:bg-teal-700">إتمام الطلب</Button>
+                    <Button className="bg-red-600 hover:bg-red-700">إتمام الطلب</Button>
                   </Link>
                 </CardFooter>
               </Card>

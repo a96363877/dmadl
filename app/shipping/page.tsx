@@ -24,7 +24,7 @@ export default function ShippingPage() {
   return (
     <div className="flex min-h-screen flex-col bg-white">
       {/* Top Bar */}
-      <div className="bg-teal-900 text-white py-2 text-center text-sm">
+      <div className="bg-red-900 text-white py-2 text-center text-sm">
         <div className="container mx-auto px-4">
           توصيل مجاني للطلبات فوق 200 ريال | استخدم كود "FISH10" للحصول على خصم 10%
         </div>
@@ -36,33 +36,33 @@ export default function ShippingPage() {
           <div className="flex items-center justify-between py-4 border-b">
             <div className="flex items-center gap-8">
               <Link href="/" className="flex items-center gap-2">
-                <Fish className="h-8 w-8 text-teal-600" strokeWidth={1.5} />
-                <span className="text-2xl font-bold text-teal-700">بحر الخيرات</span>
+                <Fish className="h-8 w-8 text-red-600" strokeWidth={1.5} />
+                <span className="text-2xl font-bold text-red-700">بحر الخيرات</span>
               </Link>
 
               <div className="hidden lg:flex relative w-96">
-                <Input placeholder="ابحث عن منتجات..." className="pr-10 border-teal-200 focus-visible:ring-teal-500" />
-                <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-teal-500" />
+                <Input placeholder="ابحث عن منتجات..." className="pr-10 border-red-200 focus-visible:ring-red-500" />
+                <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-red-500" />
               </div>
             </div>
 
             <div className="hidden md:flex items-center gap-6">
               <CountrySelector />
-              <Link href="/" className="text-gray-600 hover:text-teal-600 transition-colors">
+              <Link href="/" className="text-gray-600 hover:text-red-600 transition-colors">
                 الرئيسية
               </Link>
-              <Link href="/shipping" className="text-teal-600 font-medium">
+              <Link href="/shipping" className="text-red-600 font-medium">
                 الشحن والتوصيل
               </Link>
-              <Link href="/checkout" className="text-gray-600 hover:text-teal-600 transition-colors">
+              <Link href="/checkout" className="text-gray-600 hover:text-red-600 transition-colors">
                 الدفع
               </Link>
-              <Link href="/invoice" className="text-gray-600 hover:text-teal-600 transition-colors">
+              <Link href="/invoice" className="text-gray-600 hover:text-red-600 transition-colors">
                 الفواتير
               </Link>
               <div className="h-6 w-px bg-gray-200"></div>
               <MiniCart />
-              <Button className="bg-teal-600 hover:bg-teal-700">تسجيل الدخول</Button>
+              <Button className="bg-red-600 hover:bg-red-700">تسجيل الدخول</Button>
             </div>
 
             <div className="flex md:hidden items-center gap-4">
@@ -79,16 +79,16 @@ export default function ShippingPage() {
                   <div className="flex flex-col h-full">
                     <div className="flex items-center justify-between py-4 border-b">
                       <Link href="/" className="flex items-center gap-2">
-                        <Fish className="h-6 w-6 text-teal-600" />
-                        <span className="text-xl font-bold text-teal-700">بحر الخيرات</span>
+                        <Fish className="h-6 w-6 text-red-600" />
+                        <span className="text-xl font-bold text-red-700">بحر الخيرات</span>
                       </Link>
                     </div>
                     <div className="relative my-4">
                       <Input
                         placeholder="ابحث عن منتجات..."
-                        className="pr-10 border-teal-200 focus-visible:ring-teal-500"
+                        className="pr-10 border-red-200 focus-visible:ring-red-500"
                       />
-                      <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-teal-500" />
+                      <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-red-500" />
                     </div>
                     <nav className="flex flex-col space-y-1 mt-4">
                       <Link
@@ -100,7 +100,7 @@ export default function ShippingPage() {
                       </Link>
                       <Link
                         href="/shipping"
-                        className="py-3 px-4 rounded-md text-teal-700 bg-teal-50 font-medium flex items-center justify-between"
+                        className="py-3 px-4 rounded-md text-red-700 bg-red-50 font-medium flex items-center justify-between"
                       >
                         الشحن والتوصيل
                         <ChevronDown className="h-5 w-5" />
@@ -121,7 +121,7 @@ export default function ShippingPage() {
                       </Link>
                     </nav>
                     <div className="mt-auto pt-4 border-t">
-                      <Button className="w-full bg-teal-600 hover:bg-teal-700">تسجيل الدخول</Button>
+                      <Button className="w-full bg-red-600 hover:bg-red-700">تسجيل الدخول</Button>
                     </div>
                   </div>
                 </SheetContent>
@@ -141,7 +141,7 @@ export default function ShippingPage() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/shipping" className="font-medium text-teal-700">
+                <BreadcrumbLink href="/shipping" className="font-medium text-red-700">
                   الشحن والتوصيل
                 </BreadcrumbLink>
               </BreadcrumbItem>
@@ -152,7 +152,7 @@ export default function ShippingPage() {
 
       {/* Hero Section */}
       <section className="relative">
-        <div className="absolute inset-0 bg-gradient-to-l from-teal-900/90 to-teal-700/80 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-l from-red-900/90 to-red-700/80 z-10"></div>
         <div className="relative h-[300px]">
           <Image
             src="/placeholder.svg?height=800&width=1600"
@@ -165,7 +165,7 @@ export default function ShippingPage() {
         <div className="absolute inset-0 z-20 flex items-center">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl">
-              <Badge className="bg-white text-teal-700 hover:bg-white mb-4">خدمة توصيل سريعة</Badge>
+              <Badge className="bg-white text-red-700 hover:bg-white mb-4">خدمة توصيل سريعة</Badge>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
                 معلومات الشحن والتوصيل
               </h1>
@@ -185,8 +185,8 @@ export default function ShippingPage() {
             <div className="lg:col-span-1 order-2 lg:order-1">
               <div className="sticky top-28">
                 <Card className="border border-gray-200 shadow-sm overflow-hidden">
-                  <CardHeader className="bg-teal-50 border-b border-teal-100">
-                    <CardTitle className="text-teal-700 flex items-center gap-2">
+                  <CardHeader className="bg-red-50 border-b border-red-100">
+                    <CardTitle className="text-red-700 flex items-center gap-2">
                       <Truck className="h-5 w-5" />
                       خدمات الشحن
                     </CardTitle>
@@ -195,7 +195,7 @@ export default function ShippingPage() {
                     <nav className="flex flex-col">
                       <Link
                         href="#shipping-options"
-                        className="px-4 py-3 border-b hover:bg-gray-50 flex items-center justify-between text-teal-700"
+                        className="px-4 py-3 border-b hover:bg-gray-50 flex items-center justify-between text-red-700"
                       >
                         خيارات الشحن
                         <ArrowRight className="h-4 w-4" />
@@ -226,8 +226,8 @@ export default function ShippingPage() {
                 </Card>
 
                 <Card className="mt-6 border border-gray-200 shadow-sm overflow-hidden">
-                  <CardHeader className="bg-teal-50 border-b border-teal-100">
-                    <CardTitle className="text-teal-700 flex items-center gap-2">
+                  <CardHeader className="bg-red-50 border-b border-red-100">
+                    <CardTitle className="text-red-700 flex items-center gap-2">
                       <MapPin className="h-5 w-5" />
                       تواصل معنا
                     </CardTitle>
@@ -236,8 +236,8 @@ export default function ShippingPage() {
                     <p className="mb-4 text-gray-600">هل لديك أسئلة حول الشحن؟ تواصل مع فريق خدمة العملاء</p>
                     <div className="space-y-3 mb-4">
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center flex-shrink-0">
-                          <i className="fas fa-phone text-teal-600"></i>
+                        <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
+                          <i className="fas fa-phone text-red-600"></i>
                         </div>
                         <div>
                           <p className="text-sm text-gray-500">اتصل بنا</p>
@@ -245,8 +245,8 @@ export default function ShippingPage() {
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center flex-shrink-0">
-                          <i className="fas fa-envelope text-teal-600"></i>
+                        <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
+                          <i className="fas fa-envelope text-red-600"></i>
                         </div>
                         <div>
                           <p className="text-sm text-gray-500">البريد الإلكتروني</p>
@@ -254,7 +254,7 @@ export default function ShippingPage() {
                         </div>
                       </div>
                     </div>
-                    <Button className="w-full bg-teal-600 hover:bg-teal-700">اتصل بنا</Button>
+                    <Button className="w-full bg-red-600 hover:bg-red-700">اتصل بنا</Button>
                   </CardContent>
                 </Card>
 
@@ -276,8 +276,8 @@ export default function ShippingPage() {
             <div className="lg:col-span-2 order-1 lg:order-2">
               <div id="shipping-options" className="mb-12 scroll-mt-28">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
-                    <Truck className="h-5 w-5 text-teal-600" />
+                  <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
+                    <Truck className="h-5 w-5 text-red-600" />
                   </div>
                   <h2 className="text-2xl font-bold text-gray-900">خيارات الشحن</h2>
                 </div>
@@ -290,27 +290,27 @@ export default function ShippingPage() {
                   <TabsList className="w-full grid grid-cols-3 bg-gray-50 p-0 h-auto border-b">
                     <TabsTrigger
                       value="standard"
-                      className="data-[state=active]:bg-white data-[state=active]:text-teal-700 data-[state=active]:shadow-none py-3"
+                      className="data-[state=active]:bg-white data-[state=active]:text-red-700 data-[state=active]:shadow-none py-3"
                     >
                       الشحن العادي
                     </TabsTrigger>
                     <TabsTrigger
                       value="express"
-                      className="data-[state=active]:bg-white data-[state=active]:text-teal-700 data-[state=active]:shadow-none py-3"
+                      className="data-[state=active]:bg-white data-[state=active]:text-red-700 data-[state=active]:shadow-none py-3"
                     >
                       الشحن السريع
                     </TabsTrigger>
                     <TabsTrigger
                       value="same-day"
-                      className="data-[state=active]:bg-white data-[state=active]:text-teal-700 data-[state=active]:shadow-none py-3"
+                      className="data-[state=active]:bg-white data-[state=active]:text-red-700 data-[state=active]:shadow-none py-3"
                     >
                       التوصيل في نفس اليوم
                     </TabsTrigger>
                   </TabsList>
                   <TabsContent value="standard" className="p-6 bg-white m-0">
                     <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-teal-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Truck className="h-7 w-7 text-teal-600" />
+                      <div className="w-14 h-14 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Truck className="h-7 w-7 text-red-600" />
                       </div>
                       <div>
                         <h3 className="text-lg font-semibold mb-2">الشحن العادي</h3>
@@ -337,8 +337,8 @@ export default function ShippingPage() {
                   </TabsContent>
                   <TabsContent value="express" className="p-6 bg-white m-0">
                     <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-teal-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Clock className="h-7 w-7 text-teal-600" />
+                      <div className="w-14 h-14 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Clock className="h-7 w-7 text-red-600" />
                       </div>
                       <div>
                         <h3 className="text-lg font-semibold mb-2">الشحن السريع</h3>
@@ -365,8 +365,8 @@ export default function ShippingPage() {
                   </TabsContent>
                   <TabsContent value="same-day" className="p-6 bg-white m-0">
                     <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-teal-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <MapPin className="h-7 w-7 text-teal-600" />
+                      <div className="w-14 h-14 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <MapPin className="h-7 w-7 text-red-600" />
                       </div>
                       <div>
                         <h3 className="text-lg font-semibold mb-2">التوصيل في نفس اليوم</h3>
@@ -396,8 +396,8 @@ export default function ShippingPage() {
 
               <div id="delivery-areas" className="mb-12 scroll-mt-28">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-5 w-5 text-teal-600" />
+                  <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="h-5 w-5 text-red-600" />
                   </div>
                   <h2 className="text-2xl font-bold text-gray-900">مناطق التوصيل</h2>
                 </div>
@@ -411,8 +411,8 @@ export default function ShippingPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="border rounded-md p-4 bg-white hover:shadow-md transition-shadow">
                         <div className="flex items-center gap-2 mb-3">
-                          <div className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center flex-shrink-0">
-                            <MapPin className="h-4 w-4 text-teal-600" />
+                          <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
+                            <MapPin className="h-4 w-4 text-red-600" />
                           </div>
                           <h3 className="font-semibold">المنطقة الوسطى</h3>
                         </div>
@@ -425,8 +425,8 @@ export default function ShippingPage() {
                       </div>
                       <div className="border rounded-md p-4 bg-white hover:shadow-md transition-shadow">
                         <div className="flex items-center gap-2 mb-3">
-                          <div className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center flex-shrink-0">
-                            <MapPin className="h-4 w-4 text-teal-600" />
+                          <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
+                            <MapPin className="h-4 w-4 text-red-600" />
                           </div>
                           <h3 className="font-semibold">المنطقة الغربية</h3>
                         </div>
@@ -439,8 +439,8 @@ export default function ShippingPage() {
                       </div>
                       <div className="border rounded-md p-4 bg-white hover:shadow-md transition-shadow">
                         <div className="flex items-center gap-2 mb-3">
-                          <div className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center flex-shrink-0">
-                            <MapPin className="h-4 w-4 text-teal-600" />
+                          <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
+                            <MapPin className="h-4 w-4 text-red-600" />
                           </div>
                           <h3 className="font-semibold">المنطقة الشرقية</h3>
                         </div>
@@ -453,8 +453,8 @@ export default function ShippingPage() {
                       </div>
                       <div className="border rounded-md p-4 bg-white hover:shadow-md transition-shadow">
                         <div className="flex items-center gap-2 mb-3">
-                          <div className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center flex-shrink-0">
-                            <MapPin className="h-4 w-4 text-teal-600" />
+                          <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
+                            <MapPin className="h-4 w-4 text-red-600" />
                           </div>
                           <h3 className="font-semibold">المنطقة الجنوبية</h3>
                         </div>
@@ -468,7 +468,7 @@ export default function ShippingPage() {
                     </div>
                     <div className="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
                       <p className="text-sm text-gray-600">
-                        <span className="font-medium text-teal-700">ملاحظة:</span> قد تختلف أوقات التوصيل حسب المنطقة
+                        <span className="font-medium text-red-700">ملاحظة:</span> قد تختلف أوقات التوصيل حسب المنطقة
                         والظروف الجوية. خدمة التوصيل في نفس اليوم متاحة فقط في المدن الرئيسية (الرياض، جدة، الدمام)
                         للطلبات المقدمة قبل الساعة 12 ظهرًا.
                       </p>
@@ -479,8 +479,8 @@ export default function ShippingPage() {
 
               <div id="shipping-policy" className="mb-12 scroll-mt-28">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
-                    <i className="fas fa-file-alt text-teal-600"></i>
+                  <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
+                    <i className="fas fa-file-alt text-red-600"></i>
                   </div>
                   <h2 className="text-2xl font-bold text-gray-900">سياسة الشحن</h2>
                 </div>
@@ -493,8 +493,8 @@ export default function ShippingPage() {
                   <AccordionItem value="item-1" className="border-b">
                     <AccordionTrigger className="px-4 py-3 hover:bg-gray-50 hover:no-underline">
                       <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center flex-shrink-0">
-                          <i className="fas fa-box text-teal-600"></i>
+                        <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
+                          <i className="fas fa-box text-red-600"></i>
                         </div>
                         <span className="font-medium">كيف يتم تغليف المنتجات البحرية؟</span>
                       </div>
@@ -510,8 +510,8 @@ export default function ShippingPage() {
                   <AccordionItem value="item-2" className="border-b">
                     <AccordionTrigger className="px-4 py-3 hover:bg-gray-50 hover:no-underline">
                       <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center flex-shrink-0">
-                          <i className="fas fa-user-clock text-teal-600"></i>
+                        <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
+                          <i className="fas fa-user-clock text-red-600"></i>
                         </div>
                         <span className="font-medium">ماذا لو لم أكن متواجدًا وقت التسليم؟</span>
                       </div>
@@ -527,8 +527,8 @@ export default function ShippingPage() {
                   <AccordionItem value="item-3" className="border-b">
                     <AccordionTrigger className="px-4 py-3 hover:bg-gray-50 hover:no-underline">
                       <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center flex-shrink-0">
-                          <i className="fas fa-map-marker-alt text-teal-600"></i>
+                        <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
+                          <i className="fas fa-map-marker-alt text-red-600"></i>
                         </div>
                         <span className="font-medium">هل يمكنني تغيير عنوان التوصيل بعد تقديم الطلب؟</span>
                       </div>
@@ -544,8 +544,8 @@ export default function ShippingPage() {
                   <AccordionItem value="item-4">
                     <AccordionTrigger className="px-4 py-3 hover:bg-gray-50 hover:no-underline">
                       <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center flex-shrink-0">
-                          <i className="fas fa-exchange-alt text-teal-600"></i>
+                        <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
+                          <i className="fas fa-exchange-alt text-red-600"></i>
                         </div>
                         <span className="font-medium">ما هي سياسة الإرجاع للمنتجات البحرية؟</span>
                       </div>
@@ -563,8 +563,8 @@ export default function ShippingPage() {
 
               <div id="tracking" className="mb-12 scroll-mt-28">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
-                    <i className="fas fa-search-location text-teal-600"></i>
+                  <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
+                    <i className="fas fa-search-location text-red-600"></i>
                   </div>
                   <h2 className="text-2xl font-bold text-gray-900">تتبع الطلب</h2>
                 </div>
@@ -575,10 +575,10 @@ export default function ShippingPage() {
 
                 <Card className="border border-gray-200 shadow-sm">
                   <CardContent className="pt-6">
-                    <div className="bg-teal-50 p-4 rounded-lg border border-teal-100 mb-6">
+                    <div className="bg-red-50 p-4 rounded-lg border border-red-100 mb-6">
                       <div className="flex items-center gap-3">
-                        <i className="fas fa-info-circle text-teal-600"></i>
-                        <p className="text-teal-700 text-sm">
+                        <i className="fas fa-info-circle text-red-600"></i>
+                        <p className="text-red-700 text-sm">
                           بمجرد تأكيد طلبك، ستتلقى رسالة نصية وبريدًا إلكترونيًا يحتوي على رقم التتبع الخاص بطلبك.
                         </p>
                       </div>
@@ -591,9 +591,9 @@ export default function ShippingPage() {
                         <Input
                           id="tracking-number"
                           placeholder="أدخل رقم الطلب"
-                          className="flex-1 border-teal-200 focus-visible:ring-teal-500"
+                          className="flex-1 border-red-200 focus-visible:ring-red-500"
                         />
-                        <Button className="bg-teal-600 hover:bg-teal-700">تتبع</Button>
+                        <Button className="bg-red-600 hover:bg-red-700">تتبع</Button>
                       </div>
                     </div>
                     <div className="p-8 bg-gray-50 rounded-lg border border-gray-200 text-center">
@@ -607,7 +607,7 @@ export default function ShippingPage() {
                 </Card>
               </div>
 
-              <div className="bg-gradient-to-r from-teal-600 to-teal-500 p-8 rounded-xl text-white">
+              <div className="bg-gradient-to-r from-red-600 to-red-500 p-8 rounded-xl text-white">
                 <div className="flex flex-col md:flex-row items-center gap-6">
                   <div className="md:w-2/3">
                     <h3 className="text-2xl font-bold mb-4">هل أنت جاهز للطلب؟</h3>
@@ -615,7 +615,7 @@ export default function ShippingPage() {
                       استمتع بأفضل المأكولات البحرية الطازجة موصلة إلى باب منزلك. نضمن لك جودة عالية وتوصيل سريع وآمن.
                     </p>
                     <Link href="/">
-                      <Button className="bg-white text-teal-700 hover:bg-white/90">تسوق الآن</Button>
+                      <Button className="bg-white text-red-700 hover:bg-white/90">تسوق الآن</Button>
                     </Link>
                   </div>
                   <div className="md:w-1/3 relative h-40 w-full md:h-auto">
@@ -639,7 +639,7 @@ export default function ShippingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
             <div className="lg:col-span-2">
               <div className="flex items-center gap-2 mb-6">
-                <Fish className="h-8 w-8 text-teal-400" />
+                <Fish className="h-8 w-8 text-red-400" />
                 <span className="text-2xl font-bold text-white">بحر الخيرات</span>
               </div>
               <p className="text-gray-400 mb-6 max-w-md">
@@ -647,16 +647,16 @@ export default function ShippingPage() {
                 وصولها إلى منزلك بأفضل حالة وبأسعار منافسة.
               </p>
               <div className="flex items-center gap-4">
-                <Button variant="ghost" size="icon" className="rounded-full bg-gray-800 hover:bg-teal-600 h-10 w-10">
+                <Button variant="ghost" size="icon" className="rounded-full bg-gray-800 hover:bg-red-600 h-10 w-10">
                   <i className="fab fa-facebook-f"></i>
                 </Button>
-                <Button variant="ghost" size="icon" className="rounded-full bg-gray-800 hover:bg-teal-600 h-10 w-10">
+                <Button variant="ghost" size="icon" className="rounded-full bg-gray-800 hover:bg-red-600 h-10 w-10">
                   <i className="fab fa-twitter"></i>
                 </Button>
-                <Button variant="ghost" size="icon" className="rounded-full bg-gray-800 hover:bg-teal-600 h-10 w-10">
+                <Button variant="ghost" size="icon" className="rounded-full bg-gray-800 hover:bg-red-600 h-10 w-10">
                   <i className="fab fa-instagram"></i>
                 </Button>
-                <Button variant="ghost" size="icon" className="rounded-full bg-gray-800 hover:bg-teal-600 h-10 w-10">
+                <Button variant="ghost" size="icon" className="rounded-full bg-gray-800 hover:bg-red-600 h-10 w-10">
                   <i className="fab fa-youtube"></i>
                 </Button>
               </div>
@@ -665,32 +665,32 @@ export default function ShippingPage() {
               <h3 className="text-lg font-semibold mb-6">روابط سريعة</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link href="/" className="text-gray-400 hover:text-teal-400 transition-colors">
+                  <Link href="/" className="text-gray-400 hover:text-red-400 transition-colors">
                     الرئيسية
                   </Link>
                 </li>
                 <li>
-                  <Link href="/shipping" className="text-gray-400 hover:text-teal-400 transition-colors">
+                  <Link href="/shipping" className="text-gray-400 hover:text-red-400 transition-colors">
                     الشحن والتوصيل
                   </Link>
                 </li>
                 <li>
-                  <Link href="/checkout" className="text-gray-400 hover:text-teal-400 transition-colors">
+                  <Link href="/checkout" className="text-gray-400 hover:text-red-400 transition-colors">
                     الدفع
                   </Link>
                 </li>
                 <li>
-                  <Link href="/invoice" className="text-gray-400 hover:text-teal-400 transition-colors">
+                  <Link href="/invoice" className="text-gray-400 hover:text-red-400 transition-colors">
                     الفواتير
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
+                  <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors">
                     من نحن
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
+                  <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors">
                     اتصل بنا
                   </Link>
                 </li>
@@ -700,27 +700,27 @@ export default function ShippingPage() {
               <h3 className="text-lg font-semibold mb-6">فئات المنتجات</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
+                  <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors">
                     الأسماك الطازجة
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
+                  <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors">
                     المأكولات البحرية
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
+                  <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors">
                     الأسماك المجمدة
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
+                  <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors">
                     الكافيار والأطعمة الفاخرة
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
+                  <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors">
                     التوابل والصلصات
                   </Link>
                 </li>
@@ -731,20 +731,20 @@ export default function ShippingPage() {
               <ul className="space-y-4 text-gray-400">
                 <li className="flex items-start gap-3">
                   <div className="mt-1 flex-shrink-0">
-                    <i className="fas fa-map-marker-alt text-teal-400"></i>
+                    <i className="fas fa-map-marker-alt text-red-400"></i>
                   </div>
                   <div>الرياض، حي النزهة، شارع الملك فهد، المملكة العربية السعودية</div>
                 </li>
                 <li className="flex items-center gap-3">
-                  <i className="fas fa-phone-alt text-teal-400"></i>
+                  <i className="fas fa-phone-alt text-red-400"></i>
                   <span>هاتف: 966512345678+</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <i className="fas fa-envelope text-teal-400"></i>
+                  <i className="fas fa-envelope text-red-400"></i>
                   <span>البريد الإلكتروني: info@bahralkhayraat.com</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <i className="fas fa-clock text-teal-400"></i>
+                  <i className="fas fa-clock text-red-400"></i>
                   <span>ساعات العمل: 9 صباحًا - 10 مساءً</span>
                 </li>
               </ul>
@@ -755,15 +755,15 @@ export default function ShippingPage() {
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <p className="text-gray-400">© 2025 بحر الخيرات. جميع الحقوق محفوظة</p>
               <div className="flex items-center gap-4">
-                <Link href="#" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">
+                <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors text-sm">
                   سياسة الخصوصية
                 </Link>
                 <span className="text-gray-600">|</span>
-                <Link href="#" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">
+                <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors text-sm">
                   الشروط والأحكام
                 </Link>
                 <span className="text-gray-600">|</span>
-                <Link href="#" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">
+                <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors text-sm">
                   سياسة الاسترجاع
                 </Link>
               </div>

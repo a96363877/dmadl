@@ -14,41 +14,41 @@ export default function InvoicePage() {
       <header className="sticky top-0 z-10 bg-white border-b">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <Fish className="h-6 w-6 text-teal-600" />
-            <span className="text-xl font-bold text-teal-600">بحر الخيرات</span>
+            <Fish className="h-6 w-6 text-red-600" />
+            <span className="text-xl font-bold text-red-600">بحر الخيرات</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-            <Link href="/" className="text-gray-600 hover:text-teal-600">
+            <Link href="/" className="text-gray-600 hover:text-red-600">
               الرئيسية
             </Link>
-            <Link href="/shipping" className="text-gray-600 hover:text-teal-600">
+            <Link href="/shipping" className="text-gray-600 hover:text-red-600">
               الشحن
             </Link>
-            <Link href="/checkout" className="text-gray-600 hover:text-teal-600">
+            <Link href="/checkout" className="text-gray-600 hover:text-red-600">
               الدفع
             </Link>
-            <Link href="/invoice" className="text-teal-600 hover:text-teal-800">
+            <Link href="/invoice" className="text-red-600 hover:text-red-800">
               الفواتير
             </Link>
             <div className="h-6 w-px bg-gray-200 mx-2"></div>
             <MiniCart />
           </nav>
-          <Button className="hidden md:flex bg-teal-600 hover:bg-teal-700">تسجيل الدخول</Button>
+          <Button className="hidden md:flex bg-red-600 hover:bg-red-700">تسجيل الدخول</Button>
         </div>
       </header>
 
       {/* Order Confirmation */}
-      <section className="bg-teal-50 py-8">
+      <section className="bg-red-50 py-8">
         <div className="container mx-auto px-4 text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full mb-4">
-            <CheckCircle className="h-8 w-8 text-teal-600" />
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-4">
+            <CheckCircle className="h-8 w-8 text-red-600" />
           </div>
           <h1 className="text-3xl font-bold mb-2">تم تأكيد طلبك!</h1>
           <p className="text-gray-600 max-w-md mx-auto">
             شكرًا لطلبك من بحر الخيرات. تم إرسال تفاصيل الطلب إلى بريدك الإلكتروني.
           </p>
           <div className="mt-6 flex justify-center gap-4">
-            <Button className="bg-teal-600 hover:bg-teal-700">
+            <Button className="bg-red-600 hover:bg-red-700">
               <Printer className="mr-2 h-4 w-4" />
               طباعة الفاتورة
             </Button>
@@ -71,8 +71,8 @@ export default function InvoicePage() {
                   <p className="text-gray-500 mt-1">رقم الطلب: #INV-12345</p>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Fish className="h-8 w-8 text-teal-600" />
-                  <span className="text-xl font-bold text-teal-600">بحر الخيرات</span>
+                  <Fish className="h-8 w-8 text-red-600" />
+                  <span className="text-xl font-bold text-red-600">بحر الخيرات</span>
                 </div>
               </div>
             </CardHeader>
@@ -226,7 +226,7 @@ export default function InvoicePage() {
                   placeholder="البريد الإلكتروني"
                   className="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-900"
                 />
-                <Button className="rounded-r-md rounded-l-none bg-teal-600 hover:bg-teal-700">اشتراك</Button>
+                <Button className="rounded-r-md rounded-l-none bg-red-600 hover:bg-red-700">اشتراك</Button>
               </div>
             </div>
           </div>

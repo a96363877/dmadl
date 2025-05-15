@@ -27,25 +27,25 @@ export default function CartPage() {
       <header className="sticky top-0 z-10 bg-white border-b">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <Fish className="h-6 w-6 text-teal-600" />
-            <span className="text-xl font-bold text-teal-600">بحر الخيرات</span>
+            <Fish className="h-6 w-6 text-red-600" />
+            <span className="text-xl font-bold text-red-600">بحر الخيرات</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             <CountrySelector />
-            <Link href="/" className="text-gray-600 hover:text-teal-600">
+            <Link href="/" className="text-gray-600 hover:text-red-600">
               الرئيسية
             </Link>
-            <Link href="/shipping" className="text-gray-600 hover:text-teal-600">
+            <Link href="/shipping" className="text-gray-600 hover:text-red-600">
               الشحن
             </Link>
-            <Link href="/checkout" className="text-gray-600 hover:text-teal-600">
+            <Link href="/checkout" className="text-gray-600 hover:text-red-600">
               الدفع
             </Link>
-            <Link href="/invoice" className="text-gray-600 hover:text-teal-600">
+            <Link href="/invoice" className="text-gray-600 hover:text-red-600">
               الفواتير
             </Link>
           </nav>
-          <Button className="hidden md:flex bg-teal-600 hover:bg-teal-700">تسجيل الدخول</Button>
+          <Button className="hidden md:flex bg-red-600 hover:bg-red-700">تسجيل الدخول</Button>
         </div>
       </header>
 
@@ -67,7 +67,7 @@ export default function CartPage() {
                 لم تقم بإضافة أي منتجات إلى سلة التسوق بعد. استعرض منتجاتنا واستمتع بأفضل المأكولات البحرية الطازجة.
               </p>
               <Link href="/">
-                <Button className="bg-teal-600 hover:bg-teal-700">تصفح المنتجات</Button>
+                <Button className="bg-red-600 hover:bg-red-700">تصفح المنتجات</Button>
               </Link>
             </div>
           ) : (
@@ -141,14 +141,14 @@ export default function CartPage() {
                         </label>
                         <div className="flex">
                           <Input id="coupon" className="rounded-l-none" />
-                          <Button className="rounded-r-none bg-teal-600 hover:bg-teal-700">تطبيق</Button>
+                          <Button className="rounded-r-none bg-red-600 hover:bg-red-700">تطبيق</Button>
                         </div>
                       </div>
                     </div>
                   </CardContent>
                   <CardFooter>
                     <Link href="/checkout" className="w-full">
-                      <Button className="w-full bg-teal-600 hover:bg-teal-700">متابعة الدفع</Button>
+                      <Button className="w-full bg-red-600 hover:bg-red-700">متابعة الدفع</Button>
                     </Link>
                   </CardFooter>
                 </Card>
@@ -161,8 +161,8 @@ export default function CartPage() {
                     </p>
                     <ul className="text-sm text-gray-600 space-y-2">
                       <li className="flex items-start gap-2">
-                        <div className="rounded-full bg-teal-50 p-1 mt-0.5">
-                          <svg className="h-3 w-3 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                        <div className="rounded-full bg-red-50 p-1 mt-0.5">
+                          <svg className="h-3 w-3 text-red-600" fill="currentColor" viewBox="0 0 20 20">
                             <path
                               fillRule="evenodd"
                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -173,8 +173,8 @@ export default function CartPage() {
                         توصيل مجاني للطلبات فوق 200 {country.currency.symbol}
                       </li>
                       <li className="flex items-start gap-2">
-                        <div className="rounded-full bg-teal-50 p-1 mt-0.5">
-                          <svg className="h-3 w-3 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                        <div className="rounded-full bg-red-50 p-1 mt-0.5">
+                          <svg className="h-3 w-3 text-red-600" fill="currentColor" viewBox="0 0 20 20">
                             <path
                               fillRule="evenodd"
                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -185,8 +185,8 @@ export default function CartPage() {
                         توصيل سريع خلال 24 ساعة
                       </li>
                       <li className="flex items-start gap-2">
-                        <div className="rounded-full bg-teal-50 p-1 mt-0.5">
-                          <svg className="h-3 w-3 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                        <div className="rounded-full bg-red-50 p-1 mt-0.5">
+                          <svg className="h-3 w-3 text-red-600" fill="currentColor" viewBox="0 0 20 20">
                             <path
                               fillRule="evenodd"
                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -212,15 +212,15 @@ export default function CartPage() {
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <p className="text-gray-400">© 2025 بحر الخيرات. جميع الحقوق محفوظة</p>
               <div className="flex items-center gap-4">
-                <Link href="#" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">
+                <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors text-sm">
                   سياسة الخصوصية
                 </Link>
                 <span className="text-gray-600">|</span>
-                <Link href="#" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">
+                <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors text-sm">
                   الشروط والأحكام
                 </Link>
                 <span className="text-gray-600">|</span>
-                <Link href="#" className="text-gray-400 hover:text-teal-400 transition-colors text-sm">
+                <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors text-sm">
                   سياسة الاسترجاع
                 </Link>
               </div>

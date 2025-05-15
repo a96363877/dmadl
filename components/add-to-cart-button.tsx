@@ -32,7 +32,7 @@ export function AddToCartButton({ product, className = "", showIcon = true }: an
   }
 
   return (
-    <Button onClick={handleAddToCart} className={`bg-teal-600 hover:bg-teal-700 ${className}`} disabled={isAdded}>
+    <Button onClick={handleAddToCart} className={`bg-red-600 hover:bg-red-700 ${className}`} disabled={isAdded}>
       {isAdded ? (
         <>
           {showIcon && <Check className="h-4 w-4 mr-2" />}

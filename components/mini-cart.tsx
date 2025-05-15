@@ -46,7 +46,7 @@ export function MiniCart() {
               <p className="text-gray-500 mb-6">لم تقم بإضافة أي منتجات إلى سلة التسوق بعد</p>
               <SheetClose asChild>
                 <Link href="/">
-                  <Button className="bg-teal-600 hover:bg-teal-700">تصفح المنتجات</Button>
+                  <Button className="bg-red-600 hover:bg-red-700">تصفح المنتجات</Button>
                 </Link>
               </SheetClose>
             </div>
@@ -89,7 +89,7 @@ export function MiniCart() {
                   </SheetClose>
                   <SheetClose asChild>
                     <Link href="/checkout">
-                      <Button className="w-full bg-teal-600 hover:bg-teal-700">إتمام الشراء</Button>
+                      <Button className="w-full bg-red-600 hover:bg-red-700">إتمام الشراء</Button>
                     </Link>
                   </SheetClose>
                 </div>
